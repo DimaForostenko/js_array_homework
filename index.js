@@ -38,4 +38,18 @@ console.log(shifted);
 console.log(poped);
 
 
+// метод slice возвращает новый массив с часть исходного//
+const NumArray = [1,2,3,4,5];
+const newNumArray = NumArray.slice(0,-2);
+console.log (newNumArray);
+const newNumArray2 = NumArray.slice(3);
+console.log (newNumArray2) ;
 
+//метод splice ///
+const removed = NumArray.splice(1,2);
+console.log (NumArray);
+const NumArray2 = [1,2,3,4,5];
+const rem = NumArray2.splice(1,3);
+console.log(rem);
+const NumArray3 = [1,2,3,4,5];
+console.log(NumArray3.splice(0,10,'a','b','c'));
