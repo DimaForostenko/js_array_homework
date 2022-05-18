@@ -52,4 +52,16 @@ const NumArray2 = [1,2,3,4,5];
 const rem = NumArray2.splice(1,3);
 console.log(rem);
 const NumArray3 = [1,2,3,4,5];
-console.log(NumArray3.splice(0,10,'a','b','c'));
+let removed2=NumArray3.splice(3,0,'a','b','c');
+console.log(NumArray3);
+const NumArray4 = [1,2,3,4,5];
+let removed3=NumArray4.splice(1,0,'a','b');
+console.log(NumArray4);
+
+////  метод sort ///
+
+const ArrayNumb=[3,4,1,2,7];
+function compareNumbers(a,b){
+  return a-b;
+};
+console.log(ArrayNumb.sort(compareNumbers));
