@@ -65,3 +65,21 @@ function compareNumbers(a,b){
   return a-b;
 };
 console.log(ArrayNumb.sort(compareNumbers));
+//////////////////////////1
+"use strict";
+ const homWork=function hasElem([]) {
+    HomWork === String || HomWork ==='' ? true : false;
+ }
+ 
+// // if( String || ''){
+// //  return true;
+// // }
+// }
+
+console.log(homWork);
+///////////////////////////////////2
+const homWork2=[1,5,9,8,4,6,1,2];
+function NumberSeach() {
+  homWork2 === 2 ? true : false;
+}
+console.log(NumberSeach);
