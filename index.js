@@ -67,19 +67,22 @@ function compareNumbers(a,b){
 console.log(ArrayNumb.sort(compareNumbers));
 //////////////////////////1
 "use strict";
- const homWork=function hasElem([]) {
-    HomWork === String || HomWork ==='' ? true : false;
- }
- 
-// // if( String || ''){
-// //  return true;
-// // }
-// }
-
-console.log(homWork);
+function hasElem(value){
+  return typeof value ==='';
+}
+const StArr1 = [1,2,3];
+console.log(StArr1.every(hasElem));
+  // const HomWork = function hasElem(string,array){
+  // if('' === array){
+  //     return true;
+  // }
+  // if('' !== array ){
+  //     return false
+  // };
+  // }
+// 
 ///////////////////////////////////2
 const homWork2=[1,5,9,8,4,6,1,2];
-function NumberSeach() {
-  homWork2 === 2 ? true : false;
-}
-console.log(NumberSeach);
+const result2=homWork2.includes(2);
+console.log(result2);
+////////////////////////////////3
