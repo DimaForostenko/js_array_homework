@@ -97,5 +97,6 @@ function RandomNumb(min, max) {
 console.log(random_arr(10,5,33));
 //////////////////////////////////5
 const ArrNumb =[12,15,20,25,59,79];
-let average = ArrNumb.reduce((array,length)=>array+i/length,0.0);
+let average = ArrNumb.reduce((r,i)=>r+i,0)/(ArrNumb.length||1);
+
 console.log(average);
