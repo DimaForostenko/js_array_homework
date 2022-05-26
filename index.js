@@ -78,19 +78,24 @@ console.log(result2);
 ////////////////////////////////3
 // искать;
 ////////////////////////////////4
-const random_arr=function() {
-  let lenght=10;
-  const min = 5;
-  const max = 33;
+const random_arr=function(length,min,max) {
+  // let length=10;
+  // const min = 5;
+  // const max = 33;
   const resultRan = [];
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < length; i++) {
     resultRan.push(RandomNumb(min, max));
   }
-  console.log(resultRan);
+  // console.log(resultRan);
   return resultRan;
 };
 function RandomNumb(min, max) {
   let rand = Math.random() * (max - min )+ min;
-  rand = Math.random(rand);
+  rand = Math.round(rand);
   return rand;
 }
+console.log(random_arr(10,5,33));
+//////////////////////////////////5
+const ArrNumb =[12,15,20,25,59,79];
+let average = ArrNumb.reduce((array,length)=>array+i/length,0.0);
+console.log(average);
