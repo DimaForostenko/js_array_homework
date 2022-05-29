@@ -76,27 +76,25 @@ const homWork2 = [1, 5, 9, 8, 4, 6, 1, 2];
 const result2 = homWork2.includes(2);
 console.log(result2);
 ////////////////////////////////3
-// искать;
+const DublNumb = [1, 2, 3, 3, 4, 8, 9, 5, 6, 7];
+const SeachNumb = (Element) => Element===Element++;
+console.log (DublNumb.some(SeachNumb));
 ////////////////////////////////4
-const random_arr=function(length,min,max) {
-  // let length=10;
-  // const min = 5;
-  // const max = 33;
+const random_arr = function (length, min, max) {
   const resultRan = [];
   for (let i = 0; i < length; i++) {
     resultRan.push(RandomNumb(min, max));
   }
-  // console.log(resultRan);
   return resultRan;
 };
 function RandomNumb(min, max) {
-  let rand = Math.random() * (max - min )+ min;
+  let rand = Math.random() * (max - min) + min;
   rand = Math.round(rand);
   return rand;
 }
-console.log(random_arr(10,5,33));
+console.log(random_arr(10, 5, 33));
 //////////////////////////////////5
-const ArrNumb =[12,15,20,25,59,79];
-let average = ArrNumb.reduce((r,i)=>r+i,0)/(ArrNumb.length||1);
+const ArrNumb = [12, 15, 20, 25, 59, 79];
+let average = ArrNumb.reduce((r, i) => r + i, 0) / (ArrNumb.length || 1);
 
 console.log(average);
