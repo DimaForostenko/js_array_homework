@@ -63,23 +63,25 @@ function compareNumbers(a, b) {
   return a - b;
 }
 console.log(ArrayNumb.sort(compareNumbers));
-//////////////////////////1
-("use strict");
+/////1.Необходимо создать функцию hasElem, которая параметрами будет принимать массив и строку, и возвращать true, если строка есть в массиве, и false - если нет.//////
+"use strict";
 function hasElem(value) {
   return typeof value === "";
 }
 const StArr1 = [1, 2, 3];
 console.log(StArr1.every(hasElem));
 
-///////////////////////////////////2
+////2.Дан массив с числами. Проверьте, что в этом массиве есть указанное число. Если есть - вернуть true, а если нет - вернуть false.////
+
 const homWork2 = [1, 5, 9, 8, 4, 6, 1, 2];
 const result2 = homWork2.includes(2);
 console.log(result2);
-////////////////////////////////3
+///3.Дан массив с числами. Проверьте, есть ли в нем два одинаковых числа подряд. Если есть -  вернуть true[2,2,1], а если нет - вернуть false[1,2,1].//////
+
 const DublNumb = [1, 2, 3, 3, 4, 8, 9, 5, 6, 7];
 const SeachNumb = (Element) => Element===Element++;
 console.log (DublNumb.some(SeachNumb));
-////////////////////////////////4
+//4.Функция, которая возвращает массив заполненный 10 случайными числами в интервале от 5 до 33. Math.random().////
 const random_arr = function (length, min, max) {
   const resultRan = [];
   for (let i = 0; i < length; i++) {
@@ -93,7 +95,7 @@ function RandomNumb(min, max) {
   return rand;
 }
 console.log(random_arr(10, 5, 33));
-//////////////////////////////////5
+//////5.Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79./////
 const ArrNumb = [12, 15, 20, 25, 59, 79];
 let average = ArrNumb.reduce((r, i) => r + i, 0) / (ArrNumb.length || 1);
 
